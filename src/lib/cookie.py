@@ -1,5 +1,7 @@
 from lib.v1_selenium import *
 from lib.logger import *
+from lib.model import *
+from typing import Dict
 
 
 def refresh_cookie_tsdm(username: str, password: str):

@@ -9,6 +9,7 @@ import random, requests, time
 from lib.model import *
 from lib.logger import *
 from lib.model import *
+from lib.cookie import *
 
 
 def work_single_post(cookie: List):
