@@ -94,7 +94,7 @@ def get_headers(cookie_list:List, header:Dict) -> Dict:
     cookie_serialized = get_serialized_cookie(cookie_list)
 
     headers = header
-    headers['cookie_list'] = cookie_serialized
+    headers['cookie'] = cookie_serialized
     return headers
 
 def write_new_cookie(new_cookie: List, username: str) -> None:

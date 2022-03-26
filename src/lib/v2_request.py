@@ -80,7 +80,7 @@ def sign_single_post_v2(cookie):
 
     # 必须要这个content-type, 否则没法接收
     headers = HEADER_TSDM_SIGN
-    headers['cookie_list'] = cookie_serialized
+    headers['cookie'] = cookie_serialized
 
     s = requests.session()
     sign_response = s.get(tsdm_sign_url, headers=headers).text
